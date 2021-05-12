@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import './assets/css/App.css';
+import Form from './components/Form';
+import TodoList from './components/TodoList';
 
+// const todos = ["hello today", "go shopping", "go for Eid"]
+
+// NOTE ;: HTML_like syntax ==> JSX, others are normal JS/TS
+
+// To pass JS to JSX we use {}
 function App() {
+const [todos, setTodos]= useState(["Go for Eid"])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Form mytodos={todos} setTodos={setTodos}/>
+    <TodoList mytodos={todos} />
     </div>
   );
 }
 
 export default App;
+
+
+//NOTE: use auto-import vscode...
