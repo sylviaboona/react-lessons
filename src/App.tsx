@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './assets/css/App.css';
+import Counter from './components/Counter';
 import Form from './components/Form';
 import TodoList from './components/TodoList';
 
@@ -14,6 +15,7 @@ const [todos, setTodos]= useState(["Go for Eid"])
     <div className="App">
     <Form mytodos={todos} setTodos={setTodos}/>
     <TodoList mytodos={todos} />
+    <Counter/>
     </div>
   );
 }

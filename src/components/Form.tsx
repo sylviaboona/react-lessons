@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 
 // GENERICS IN TYPESCRIPT ...
+// useEffect,useState
 // Form Component => Function based component
 const Form = (props:any) => {
-  // useSTate
+  // useState
   const [todo, setTodo] = useState("");
  
 
