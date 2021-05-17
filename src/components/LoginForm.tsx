@@ -1,34 +1,11 @@
 // React functional component with useState hook
 
 import React, { useState, useEffect } from "react";
-import Axios from "axios"
 
-
-Axios.get('https://jsonplaceholder.typicode.com/todos/1')
-    .then(function (response) {
-        // handle success
-        console.log(response);
-    })
-    .catch(function (error) {
-        // handle error
-        console.log(error);
-    })
 
 
 
 function LoginForm() {
-
-    useEffect(function () {
-        Axios.get('https://jsonplaceholder.typicode.com/todos/1')
-            .then(function (response) {
-                // handle success
-                console.log(response);
-            })
-            .catch(function (error) {
-                // handle error
-                console.log(error);
-            })
-    }, [])
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
