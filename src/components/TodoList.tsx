@@ -1,6 +1,5 @@
 import React from "react";
 
-//RESEARCH ABOUT STATE and HOOKS
 const TodoList = (props: any) => {
 
   return (
