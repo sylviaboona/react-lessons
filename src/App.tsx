@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import './assets/css/App.css';
 import Form from './components/Form';
 import TodoList from './components/TodoList';
+import "bootstrap/dist/css/bootstrap.min.css"
+import './assets/css/App.css';
 
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
       <section>
         <h1>Todo App</h1>
         <Form />
-        <TodoList />
+        <TodoList mytodos={todos} />
       </section>
 
     </div>
