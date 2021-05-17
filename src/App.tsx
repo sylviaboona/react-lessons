@@ -1,12 +1,18 @@
-import React from 'react';
-import './assets/css/App.css';
-
+import React from "react";
+import "./assets/css/App.css";
+import Header from "./components/Header";
+import Sidebar from "./components/Sidebar";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      <h1>Let us Learn React</h1>
-      </header>
+    <div> 
+      <Header />
+      <div className="row">
+        <Sidebar />
+        <Main />
+      </div>
+      <Footer />
     </div>
   );
 }
