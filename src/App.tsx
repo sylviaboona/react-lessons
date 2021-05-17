@@ -6,7 +6,6 @@ import LoginForm from './components/LoginForm';
 
 // App component
 function App() {
-  const [todos, setTodos] = useState(["Go for Eid"])
   return (
     <div className="App">
       <section>
