@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header";
 import NavBar from "./Navbar";
 
-const About = () => {
+const Projects = () => {
     return(
         <div>
         <Header />
@@ -12,4 +12,4 @@ const About = () => {
     )
 }
 
-export default About;
+export default Projects;
