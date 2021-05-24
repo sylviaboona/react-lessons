@@ -10,11 +10,10 @@ function App() {
   return (
     <div className="App">
       <section>
-        <h1>Todo App</h1>
+        <h1 className="todo-heading">Todo App</h1>
         <Form />
         <TodoList mytodos={todos} />
       </section>
-
     </div>
   );
 }

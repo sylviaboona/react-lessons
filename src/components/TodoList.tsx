@@ -3,9 +3,9 @@ import React from "react";
 const TodoList = (props: any) => {
 
   return (
-    <ol>
+    <ol className="list-group list-group-numbered">
       {props.mytodos.map((todo: any) => {
-        return <li> {todo}</li>;
+        return <li className="list-group-item"> {todo}</li>;
       })}
     </ol>
   );
